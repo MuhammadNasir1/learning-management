@@ -12,7 +12,10 @@
     class="fixed  bg-primary text-white top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
     aria-label="Sidebar">
     <div class="flex  justify-center mt-[31px]">
-        <a href="../admin"> <img src="{{ asset('images/sidebarlogo.svg') }}" alt="logo"></a>
+        {{-- <a href="../admin"> <img src="{{ asset('images/sidebarlogo.svg') }}" alt="logo"></a> --}}
+        <a href="../admin">
+            <h1 class="font-bold">Short Hand</h1>
+        </a>
     </div>
     <div class="h-full  py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         <ul class="space-y-2  pl-3 pr-6 font-medium">
