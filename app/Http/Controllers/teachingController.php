@@ -427,4 +427,14 @@ class teachingController extends Controller
             return response()->json(['success' => false, 'message' =>  $e->getMessage()], 500);
         }
     }
+
+    // get lesson data for history
+
+    public  function getWords()
+    {
+        // return view('history');
+
+        $words  = recent_teaching::all();
+        return response()->json(['data' => $words], 200);
+    }
 }

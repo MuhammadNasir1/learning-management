@@ -171,6 +171,7 @@ Route::middleware('custom')->group(function () {
 
 
     Route::post('course/import', [coursesController::class, 'Courseimport']);
+    Route::get('history', [teachingController::class, 'getWords']);
 });
 
 
